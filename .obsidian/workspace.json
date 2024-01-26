@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +114,9 @@
   },
   "active": "14550044cae6e6aa",
   "lastOpenFiles": [
+    "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+    "Images/logo.jpeg",
+    "Images/logo.jpeg.crdownload",
     "README.md",
     "Web Application Penetration Testing/XSS Attacks.md",
     "Web Application Penetration Testing/Web App Scanning.md",
@@ -135,13 +138,11 @@
     "Images/Pasted image 20240122221235.png",
     "Web Application Penetration Testing/Brute Force Web Login.md",
     "Images/Pasted image 20240123210025.png",
-    "Web Application Penetration Testing/SQL Injection and SQLMap.md",
     "Web Application Penetration Testing/Intro to Web.md",
     "Other Info/sql injection.md",
     "Password Cracking Windows and Linux.md",
     "Web Application Penetration Testing/Directory Enumeration.md",
     "Phishing.md",
-    "Windows/Windows Privilege Escalation.md",
     "Images/Pasted image 20231207192851.png",
     "Web Application Penetration Testing",
     "Images/Pasted image 20240121132113.png",
@@ -152,7 +153,6 @@
     "Junk",
     "Images/Pasted image 20240120132018.png",
     "Images/Pasted image 20240120133504.png",
-    "Images/Pasted image 20240120133125.png",
     "Information Gathering & Enumeration",
     "Tools",
     "Untitled.canvas",
