@@ -1,0 +1,1 @@
+Mason's videos on this subject aren't great. Notes based on lab walkthroughs and google. :(

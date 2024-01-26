@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "31e0c49cd7a6d253",
+    "type": "split",
+    "children": [
+      {
+        "id": "3371b2f78ea238e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "14550044cae6e6aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ddbc13f624b5109",
+    "type": "split",
+    "children": [
+      {
+        "id": "3550540fec848dcd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d8abca94355eec62",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8231a265dedb40e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "nikito",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e7dd9d28a765c6e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "f575ee1c2c09a1fc",
+    "type": "split",
+    "children": [
+      {
+        "id": "c623f14d09a722b9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "496ed381dc38b28b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": true,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "14550044cae6e6aa",
+  "lastOpenFiles": [
+    "README.md",
+    "Web Application Penetration Testing/XSS Attacks.md",
+    "Web Application Penetration Testing/Web App Scanning.md",
+    "Web Application Penetration Testing/HTTP Method Enumeration.md",
+    "Services/http.md",
+    "Services/Samba or SMB.md",
+    "Services/WinRM.md",
+    "Services/RDP.md",
+    "Services/WebDAV.md",
+    "Windows/Windows Notes.md",
+    "Services/SMTP.md",
+    "Services/MySQL.md",
+    "Services/ssh.md",
+    "Services/ftp and sftp.md",
+    "labwork.md",
+    "Initial Scans.md",
+    "INE Practice THM & Tools.md",
+    "Other Info/Pivoting.md",
+    "Images/Pasted image 20240122221235.png",
+    "Web Application Penetration Testing/Brute Force Web Login.md",
+    "Images/Pasted image 20240123210025.png",
+    "Web Application Penetration Testing/SQL Injection and SQLMap.md",
+    "Web Application Penetration Testing/Intro to Web.md",
+    "Other Info/sql injection.md",
+    "Password Cracking Windows and Linux.md",
+    "Web Application Penetration Testing/Directory Enumeration.md",
+    "Phishing.md",
+    "Windows/Windows Privilege Escalation.md",
+    "Images/Pasted image 20231207192851.png",
+    "Web Application Penetration Testing",
+    "Images/Pasted image 20240121132113.png",
+    "Images/Pasted image 20240121151351.png",
+    "Images/Pasted image 20240121132443.png",
+    "Images/Pasted image 20240121132405.png",
+    "Other Info",
+    "Junk",
+    "Images/Pasted image 20240120132018.png",
+    "Images/Pasted image 20240120133504.png",
+    "Images/Pasted image 20240120133125.png",
+    "Information Gathering & Enumeration",
+    "Tools",
+    "Untitled.canvas",
+    "Linux",
+    "Services",
+    "Images",
+    "Windows"
+  ]
+}
