@@ -1,5 +1,5 @@
 
-![](<images/logo.jpeg>)
+![](</Images/logo.jpeg>)
 (this hilarious logo was created via Bing Image Creator - Spelling is courtesy of Bing AI)
 # eLearnSecurity eJPTv2 Certification Notes
 

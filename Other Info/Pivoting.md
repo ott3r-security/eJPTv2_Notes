@@ -1,5 +1,5 @@
-![](<Images/Pasted image 20240121132113.png>)
-![](<Images/Pasted image 20240121132405.png>)
+![](</Images/Pasted image 20240121132113.png>)
+![](</Images/Pasted image 20240121132405.png>)
 ![](</Images/Pasted image 20240121132443.png>)
 
 For eJPT only metasploit is available for this. Other tools to look at chisel and ligolo-ng for later use
