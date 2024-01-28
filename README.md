@@ -17,7 +17,7 @@ Feel free to explore the content and use it as a study guide for your own eJPTv2
 4. [Topics Covered](#topics-covered)
 5. [Tools and Resources](#tools-and-resources)
 6. [Study Tips](#study-tips)
-7. [Additional References](#additional-references)
+7. [Additional References](#tryhackme-rooms)
 
 ## Introduction
 
@@ -43,9 +43,9 @@ A curated list of tools and resources that proved valuable during my preparation
 
 Based on my experience, I've compiled a set of study tips that can aid you in your preparation. These tips cover time management, hands-on practice, and effective note-taking strategies.
 
-## Additional References
+## TryHackMe Rooms
 
-For further exploration, I've included additional references that can complement your eJPTv2 studies. These resources cover a wide range of topics related to penetration testing and ethical hacking.
+- BadByte
 
 ## Contributing
 
@@ -55,4 +55,4 @@ If you'd like to contribute to this repository by adding notes, fixing errors, o
 
 This project is licensed under the [MIT License](LICENSE).
 
-Disclaimer - this excellent README was compiled by our good friend ChatGPT. Will fill out some of the secions at a later date. The notes are the important part.
+Disclaimer - this excellent README was compiled by our good friend ChatGPT. Will fill out some of the sections at a later date. The notes are the important part.

@@ -4,25 +4,33 @@
 
 ## nmap
 shows accounts with empty passwords
-`nmap --script=mysql-empty-password -p 3306 $IP`
+
+```bash
+nmap --script=mysql-empty-password -p 3306 $IP
 
 show db info with #nmap
-`nmap <ip address> --script=mysql-info'
-
+nmap <ip address> --script=mysql-info'
+```
 find other users
-`script=mysql-users --script-args-"mysqluser='<username>', mysqlpass=''<password>'"`
-
+```bash
+script=mysql-users --script-args-"mysqluser='<username>', mysqlpass=''<password>'"
+```
 find db's
-`script=mysql-databases --script-args-"mysqluser='<username>', mysqlpass=''<password>'"`
-
+```bash
+script=mysql-databases --script-args-"mysqluser='<username>', mysqlpass=''<password>'"
+```
 get hashes
-`nmap --script mysql-dump-hashes --script-args="username='root',password=''" -p 3306 <ip address>`
-
+```bash
+nmap --script mysql-dump-hashes --script-args="username='root',password=''" -p 3306 <ip address>
+```
 get variables
-`nmap --script=mysql-variables --script-args="mysqluser='root',mysqlpass=''" -p 3306 192.71.145.3`
-
+```bash
+nmap --script=mysql-variables --script-args="mysqluser='root',mysqlpass=''" -p 3306 192.71.145.3
+```
 audit
-`nmap --script=mysql-audit --script-args "mysql-audit.username='root',mysql-audit.password='',mysql-audit.filename='/usr/share/nmap/n selib/data/mysql-cis.audit'" -p 3306 192.71.145.3`
+```bash
+nmap --script=mysql-audit --script-args "mysql-audit.username='root',mysql-audit.password='',mysql-audit.filename='/usr/share/nmap/n selib/data/mysql-cis.audit'" -p 3306 192.71.145.3
+```
 
 ## mysql
 log in

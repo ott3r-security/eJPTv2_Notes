@@ -6,25 +6,71 @@ common port 139/445 used for sharing files and peripherals like printers
 **`IPC$`** ([`null session connection`](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/inter-process-communication-share-null-session)) - with this session, Windows lets guest _anonymous users enumerate the names of domain accounts and network shares_.
 
 ### nmap scripts for SMB
- `nmap -p445 --script smb-protocols $IP`
-`smb-protocols` returns version/protocols
-`smb-security-mode` returns some security info about smb
-`smb-enum-sessions` enumerates sessions and shows users
-`smb-enum-shares` lists differernt shares and current access type. default uses guest account
-`smb-enum-users` lists additional users and their account info like password requirements
-`smb-enum-domains` gives overall detailed info on shares
-`smb-enum-groups` group info
-`smb-ls` use like ls
-`--script smb-brute --script-args userdb=users.txt,passdb=passwords.txt`
+```bash
+nmap -p445 --script smb-protocols $IP
+```
+
+returns version/protocols
+```bash
+smb-protocols
+```
+
+returns some security info about smb
+```bash
+smb-security-mode
+```
+
+enumerates sessions and shows users
+```bash
+smb-enum-sessions
+```
+
+lists differernt shares and current access type. default uses guest account
+```bash
+smb-enum-shares
+```
+
+lists additional users and their account info like password requirements
+```bash
+smb-enum-users
+```
+
+gives overall detailed info on shares
+```bash
+smb-enum-domains
+```
+
+group info
+```bash
+smb-enum-groups
+```
+
+use like ls
+```bash
+smb-ls
+```
+
+brute force login
+```bash
+--script smb-brute --script-args userdb=users.txt,passdb=passwords.txt
+```
 
 also can add args to same scripts using --script-args. this changes the outcome above when using account with more access. ex.
-`--script-args smbusername=<user> smbpassword=<password>`
+```bash
+--script-args smbusername=<user> smbpassword=<password>
+```
 
 can also use smbmap for downloading and listing files. Examples:
 
-download: `smbmap -u administrator -p smbserver_771 -H 10.3.25.154 --download 'C$\flag.txt'`
+download: 
+```bash
+smbmap -u administrator -p smbserver_771 -H 10.3.25.154 --download 'C$\flag.txt'`
+```
 
-list director contents: `smbmap -u administrator -p smbserver_771 -H 10.3.25.154 -r c$`
+list director contents: 
+```bash
+smbmap -u administrator -p smbserver_771 -H 10.3.25.154 -r c$
+```
 
 brute force login using msfconsole scanner/smb/smb_login
 Good user lists in metasploit-framework/data/wordlists/common...
@@ -114,28 +160,16 @@ that maps IP C drive to local Z drive
 
 to close SMB `net use * /delete*`
 
-### nmap Scripts for SMB
-ex `nmap -p445 --script smb-protocols <ip address>`
-`smb-protocols` returns version/protocols
-`smb-security-mode` returns some security info about smb
-`smb-enum-sessions` enumerates sessions and shows users
-`smb-enum-shares` lists different shares and current access type. default uses guest account
-`smb-enum-users` lists additional users and their account info like password requirements
-`smb-enum-domains` gives overall detailed info on shares
-`smb-enum-groups` group info
-`smb-ls` use like ls
-
-also can add args to same scripts using --script-args. this changes the outcome above when using account with more access. ex.
-`--script-args smbusername=<user> smbpassword=<password>`
-
 ## PsExec
 - telnet replacement. Similar to RDP except commands are sent via cmd
 - get user/pass via hyrda or metasploit
 - nothing uploaded to system
 - metaploit uses psexec to open meterpreter but uploads malicous file where python script doesn't. easier to avoid antivirus
 
-run via `psexec.py username@ip address and executable` eg. cmd.exe
-
+run via 
+```bash
+psexec.py username@ip address and executable` eg. cmd.exe
+```
 can also be ran without command to log in.
 
 ### metasploit option
@@ -172,12 +206,18 @@ exploit
 Manual eternal blue exploit. Can be found [here](https://github.com/3ndG4me/AutoBlue-MS17-010.git)
 
 ## Enumeration with metasploit
+```bash
+auxiliary/scanner/smb/smb_enumusers
+```
 
-`auxiliary/scanner/smb/smb_enumusers `
-`auxiliary/scanner/smb/smb_enumshares`  
+```bash
+auxiliary/scanner/smb/smb_enumshares  
+```
 
 Brute force login
-`auxiliary/scanner/smb/smb_login`
+```bash
+auxiliary/scanner/smb/smb_login
+```
 
 ## Hydra
 Can also be used for brute forcing login

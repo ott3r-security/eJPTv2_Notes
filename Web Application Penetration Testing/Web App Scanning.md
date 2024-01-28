@@ -33,3 +33,4 @@ Output scan to html file for viewing later:
 ```bash
 nikto -h http://$IP$/index.php?page=arbitrary-file-inclusion.php -Tuning 5 -o nikto.html -Format htm
 ```
+

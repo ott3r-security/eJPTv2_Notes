@@ -6,7 +6,7 @@ nc $IP 22
 
 Enumerate algorithms
 ```bash
-nmap --script ssh2-enum-algos 192.201.39.3`
+nmap --script ssh2-enum-algos 192.201.39.3
 ```
 
 Get host key
