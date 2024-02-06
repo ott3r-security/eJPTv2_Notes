@@ -1,5 +1,7 @@
 Create listener via msfconsole
 ![](</Images/Pasted image 20231220191222.png>)
+
+Difference between staged and non-staged is mainly file size. Staged is smaller.
 ### non-staged
 >Formatted as `windows/x64/meterpreter_reverse_tcp`
 #practice 

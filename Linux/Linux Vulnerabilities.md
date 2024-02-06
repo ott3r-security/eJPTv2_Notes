@@ -7,4 +7,4 @@
 ## [FTP Running on Port 21](obsidian://open?vault=cheatsheet&file=Services%2Fftp%20and%20sftp) 
 ## [SSH Port 22](obsidian://open?vault=cheatsheet&file=Services%2Fssh)
 
-## [SMB Port 130/445](obsidian://open?vault=cheatsheet&file=Services%2FSamba%20or%20SMB)
+## [SMB Port 139/445](obsidian://open?vault=cheatsheet&file=Services%2FSamba%20or%20SMB)

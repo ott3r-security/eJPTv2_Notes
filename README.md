@@ -9,6 +9,7 @@ Welcome to my eLearnSecurity eJPTv2 Certification Notes repository. Here, you wi
 
 Feel free to explore the content and use it as a study guide for your own eJPTv2 journey. If you find any errors or have suggestions for improvement, please don't hesitate to contribute or reach out.
 
+You can find more information on their site [here](https://security.ine.com/certifications/ejpt-certification/)
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -16,36 +17,74 @@ Feel free to explore the content and use it as a study guide for your own eJPTv2
 3. [Exam Format](#exam-format)
 4. [Topics Covered](#topics-covered)
 5. [Tools and Resources](#tools-and-resources)
-6. [Study Tips](#study-tips)
+6. [Hints For A Successful Penetration Test](#hints)
 7. [Additional References](#tryhackme-rooms)
 
 ## Introduction
+#introduction
 
 The eLearnSecurity Junior Penetration Tester (eJPT) certification is designed for individuals looking to start their career in penetration testing. It focuses on practical, hands-on skills, making it an excellent choice for those new to the field.
 
 ## Preparation
+#preparation
 
-In this section, I've documented my study plan and the resources I used to prepare for the eJPTv2 exam. It includes online courses, books, and practical labs that were instrumental in gaining the necessary knowledge.
+To be successful  during the exam one should be comfortable with the following topics:
+
+- Locate endpoints on a network
+- Identify open ports and services on a target
+- Identify operating system of a target
+- Extract company information from public sources
+- Gather email addresses from public sources
+- Gather technical information from public sources
+- Identify vulnerabilities in services
+- Evaluate information and criticality or impact of vulnerabilities
+- Compile information from files on target
+- Enumerate network information from files on target
+- Enumerate system information on target
+- Gather user account information on target
+- Transfer files to and from target
+- Gather hash/password information from target
+- Identify and modify exploits
+- Conduct exploitation with metasploit
+- Demonstrate pivoting by adding a route and by port forwarding
+- Conduct brute-force password attacks and hash cracking
+- Identify vulnerabilities in web applications
+- Locate hidden file and directories
+- Conduct brute-force login attack
+- Conduct web application reconnaissance
 
 ## Exam Format
+#exam-format
 
-Understanding the format of the eJPTv2 exam is crucial for success. This section provides an overview of the exam structure, duration, and scoring, ensuring you're well-prepared for the actual test.
+Understanding the format of the eJPTv2 exam is crucial for success. The exam has a 48 hour time limit and to pass the exam, you must receive an overall exam score of at least 70%.
 
 ## Topics Covered
+#topics-covered
 
 Detailed notes on the key topics covered in the eJPTv2 certification are outlined here. From networking basics to web application security, each topic is broken down with relevant information and practical insights.
 
 ## Tools and Resources
+#tools-and-resources
 
-A curated list of tools and resources that proved valuable during my preparation is provided in this section. Whether you're looking for network scanning tools or web application security resources, you'll find helpful links and descriptions here.
+INE suggests familiarity with the following tools. The actual exam doesn't have internet access so only tools that INE has pre-installed will be available unless copy and pasted over which is a bit burdensome with some applications.
+- Nmap
+- Dirb
+- Nikto
+- WPScan
+- CrackMapExec
+- The Metasploit Framework
+- Searchsploit
+- Hydra
 
-## Study Tips
+## Hints For A Successful Penetration Test
+#hints
 
 Based on my experience, I've compiled a set of study tips that can aid you in your preparation. These tips cover time management, hands-on practice, and effective note-taking strategies.
 
 ## TryHackMe Rooms
 
 - BadByte
+- GoldenEye
 
 ## Contributing
 

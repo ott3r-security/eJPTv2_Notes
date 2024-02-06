@@ -36,4 +36,9 @@ dirb http://$URL
 Can be done via Burpsuite as well.  [INE link if needed:](https://assets.ine.com/labs/ad-manuals/walkthrough-1886.pdf)
 
 
+Search via extension
+```bash
+dirb http://$IP/ -X .txt
+```
+
 
